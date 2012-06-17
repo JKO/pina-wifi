@@ -59,7 +59,7 @@ case "$MODEM" in
 				iptables -t nat -A POSTROUTING -s 172.16.42.0/24 -o 3g-wan2 -j MASQUERADE
 				iptables -A FORWARD -s 172.16.42.0/24 -o 3g-wan2 -j ACCEPT 
 				iptables -A FORWARD -d 172.16.42.0/24 -m state --state ESTABLISHED,RELATED -i 3g-wan2 -j ACCEPT
-		
+
 		;;
 *1410:6002* | *1410:5031*) echo "Novatel MC760 (Virgin Mobile) detectado. Cambiando el modo de operación"
 				uci delete network.wan2
@@ -162,7 +162,7 @@ case "$MODEM" in
 				iptables -t nat -A POSTROUTING -s 172.16.42.0/24 -o 3g-wan2 -j MASQUERADE
 				iptables -A FORWARD -s 172.16.42.0/24 -o 3g-wan2 -j ACCEPT 
 				iptables -A FORWARD -d 172.16.42.0/24 -m state --state ESTABLISHED,RELATED -i 3g-wan2 -j ACCEPT
-				
+
 				;;
 *19d2:0031*)    echo "ZTE MF616 (TIGO-COL) detectado. Cambiando el modo de operación"
                 uci delete network.wan2         
@@ -200,7 +200,7 @@ case "$MODEM" in
 				iptables -t nat -A POSTROUTING -s 172.16.42.0/24 -o 3g-wan2 -j MASQUERADE
 				iptables -A FORWARD -s 172.16.42.0/24 -o 3g-wan2 -j ACCEPT 
 				iptables -A FORWARD -d 172.16.42.0/24 -m state --state ESTABLISHED,RELATED -i 3g-wan2 -j ACCEPT
-		
+
 		;;
 *19d2:0117*)    echo "ZTE MF668A (COMCEL-COL) detectado. Cambiando el modo de operación"
                 uci delete network.wan2         

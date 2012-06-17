@@ -6,6 +6,6 @@ exec("killall dnsspoof");
 <meta http-equiv="refresh" content="0; url=/pineapple/">
 </head><body bgcolor="black" text="white"><pre>
 <?php
-echo "Conejito de la entrop&iacute;a restaurando el DNS...";
+echo "El conejito de la entrop&iacute;a deteniendo el spoofing de DNS...";
 ?>
 </pre></head></body>

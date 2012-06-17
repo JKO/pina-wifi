@@ -1,4 +1,22 @@
-<table border="0" width="100%" bgcolor="green"><tr width="100%">
-<td>
-<pre><a href="/pineapple/index.php"><font color="black"><b>Estado</b></a> | <a href="/pineapple/config.php"><font color="black"><b>Configuraci&oacute;n</b></a> | <a href="/pineapple/advanced.php"><font color="black"><b>Avanzado</b></a> | <a href="/pineapple/usb.php"><font color="black"><b>USB</b></a> | <a href="/pineapple/jobs.php"><font color="black"><b>Tareas</b></a> | <a href="/pineapple/3g.php"><font color="black"><b>3G</b></a> | <a href="/pineapple/ssh.php"><font color="black"><b>SSH</b></a> | <a href="/pineapple/scripts.php"><font color="black"><b>Scripts</b></font></a> | <a href="/pineapple/logs.php"><font color="black"><b>Logs</b></a> | <a href="/pineapple/upgrade.php"><font color="black"><b>Actualizar</b></a> | <a href="/pineapple/resources.php"><font color="black"><b>Recursos</b></a> | <a href="/pineapple/modules.php"><font color="black"><b>M&oacute;dulos</b></a> | <a href="/pineapple/about.php"><font color="black"><b>Acerca de</b></a>
-</pre></td></tr></table>
+<div class=navbar>
+| <a href="/pineapple/index.php"><font color="black"><b>Estado</b></font></a> | 
+<a href="/pineapple/index.php?config"><font color="black"><b>Configuraci&oacute;n</b></font></a> | 
+<a href="/pineapple/index.php?advanced"><font color="black"><b>Avanzado</b></font></a> | 
+<a href="/pineapple/index.php?usb"><font color="black"><b>USB</b></font></a> | 
+<a href="/pineapple/index.php?jobs"><font color="black"><b>Tareas</b></font></a> | 
+<a href="/pineapple/index.php?3g"><font color="black"><b>3G</b></font></a> | 
+<a href="/pineapple/index.php?ssh"><font color="black"><b>SSH</b></font></a> | 
+<a href="/pineapple/index.php?scripts"><font color="black"><b>Scripts</b></font></a> | 
+<a href="/pineapple/index.php?logs"><font color="black"><b>Logs</b></font></a> | 
+<a href="/pineapple/index.php?upgrade"><font color="black"><b>Actualizar</b></font></a> | 
+<a href="/pineapple/index.php?resources"><font color="black"><b>Recursos</b></font></a> | 
+<a href="/pineapple/index.php?modules"><font color="black"><b>Pi&ntilde;a Bar</b></font></a> | 
+<a href="/pineapple/index.php?about"><font color="black"><b>Acerca de</b></font></a> |
+
+<?php
+$moduleLinks = explode("\n", file_get_contents("/www/pineapple/includes/moduleNav"));
+foreach($moduleLinks as $link){
+	if($link != "")	echo "| ".$link." ";
+}
+?>
+</div>

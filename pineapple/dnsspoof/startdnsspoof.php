@@ -6,6 +6,6 @@ exec ("echo /www/pineapple/dnsspoof/dnsspoof.sh | at now");
 <meta http-equiv="refresh" content="0; url=/pineapple/">
 </head><body bgcolor="black" text="white"><pre>
 <?php
-echo "Conejito de la entrop&iacute;a suplantando el DNS...<br/><br/>y comiendo pastel";
+echo "El conejito de la entrop&iacute;a haciendo spoofing de DNS...<br/><br/>y comiendo pastel!";
 ?>
 </pre></head></body>

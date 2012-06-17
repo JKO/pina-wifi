@@ -1,6 +1,6 @@
 #!/bin/sh
-#Script to add / remove reset button
-#Reset is marked as WPS (incorrect)
+#Script para agregar / remover el botón reset
+#Reset es marcado como WPS (incorrecto)
 
 if [ $1 == "enable" ]
 then

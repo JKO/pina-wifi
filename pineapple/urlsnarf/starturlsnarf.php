@@ -7,6 +7,6 @@ exec ("echo /www/pineapple/urlsnarf/update-urlsnarf.sh | at now");
 <meta http-equiv="refresh" content="0; url=/pineapple/">
 </head><body bgcolor="black" text="white"><pre>
 <?php
-echo "Conejito de la entrop&iacute;a se abalanza sobre las URLs...";
+echo "El conejito de la entrop&iacute;a se abalanza sobre las URLs...";
 ?>
 </pre></head></body>

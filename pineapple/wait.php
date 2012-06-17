@@ -1,8 +1,8 @@
 <html><head>
-<meta http-equiv="refresh" content="5; url=/pineapple/">
+<meta http-equiv="refresh" content="2; url=/pineapple/">
 </head><body bgcolor="black" text="white"><pre>
 <?php
-echo "Ag&aacute;rrate fuerte. El conejito de la entrop&iacute;a está rebotando...";
+echo "Suj&eacute;tate Fuerte. El conejito de la entrop&iacute;a est&aacute; saltando...";
 ?>
 
 (\___/)

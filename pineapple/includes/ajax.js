@@ -15,7 +15,7 @@ function createRequest() {
  }
  
  if (request == null) {
-   alert("Error creating request object!");
+   alert("Error creando solicitud objeto!");
  } else {
    return request;
  }
